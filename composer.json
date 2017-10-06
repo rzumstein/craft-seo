@@ -1,0 +1,24 @@
+{
+    "name": "pinfirestudios/craft-seo",
+    "description": "SEO plugin for Craft 3",
+    "version": "1.0.2",
+    "type": "craft-plugin",
+    "minimum-stability": "dev",
+    "require": {
+      "craftcms/cms": "^3.0.0-beta.20"
+    },
+    "autoload": {
+      "psr-4": {
+        "pinfirestudios\\craftseo\\": "src/"
+      }
+    },
+    "support": {
+      "email": "support@pinfirelabs.com"
+    },
+    "extra": {
+      "handle": "craft-seo",
+      "name": "SEO",
+      "developer": "Pinfire Studios",
+      "developerUrl": "http://pinfirestudios.com"
+    }
+  }

@@ -1,0 +1,37 @@
+{#
+/**
+ * craft-seo plugin for Craft CMS 3.x
+ *
+ * craft-seo index.twig
+ *
+ * @author    Pinfire Studios
+ * @copyright Copyright (c) 2017 Pinfire Studios
+ * @link      http://pinfirestudios.com
+ * @package   Craftseo
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{# Link for the ? icon at the bottom of the page #}
+{% set docsUrl = "???" %}
+
+{# The title of this CP section #}
+{% set title = "SEO" %}
+
+{# The URL to this plugin's base CP section #}
+{% set pluginCpUrl = url('craft-seo') %}
+
+{# Content that should appear in the page header#}
+{% set extraPageHeaderHtml %}
+    <div class="buttons">
+        <a href="{{ pluginCpUrl }}" class="btn submit add icon">{{ "Click Me!"|t('craft-seo') }}</a>
+    </div>
+{% endset %}
+
+{# The content of the CP Section#}
+{% set content %}
+    <h2>{{ "SEO CP Section body goes here"|t('craft-seo') }}</h2>
+{% endset %}
